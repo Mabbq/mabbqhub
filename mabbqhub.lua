@@ -25,13 +25,6 @@ local Tabs = {
     Status = Window:AddTab({ Title = "Server Stats", Icon = "activity" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
     Player = Window:AddTab({ Title = "Player pvp", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Fruit Blox ESP", Icon = "apple" }),
-    Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race Trial V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Miscellaneous", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Hop Server", Icon = "wifi" }),
 }
 local Options = Fluent.Options
 do
@@ -7843,16 +7836,6 @@ function NoFog()
         end
     end
 end
-
-Tabs.profile:AddParagraph({
-        Title = "Owner",
-        Content = "Mabbq"
-    })
-  
-Tabs.profile:AddParagraph({
-        Title = "Link for our channel",
-        Content = "https://www.youtube.com/@Mabbq"
-    })      
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Hop
 
@@ -7931,3 +7914,12 @@ Fluent:Notify({
     Content = "Welcome to Mabbq hub",
     Durtion = 3
 })
+Tabs.profile:AddParagraph({
+    Title = "Owner",
+    Content = "Mabbq"
+})
+
+Tabs.profile:AddParagraph({
+    Title = "Link for our channel",
+    Content = "https://www.youtube.com/@Mabbq"
+})      
