@@ -12,7 +12,6 @@ button.Size = UDim2.new(0, 100, 0, 50) -- Set size
 button.Position = UDim2.new(0, 10, 0.5, -25) -- Set position to the left with an X offset of 10 pixel
 button.BackgroundColor3 = Color3.fromRGB(255,255,255) -- Set button background color to red
 
-button.Text = "Stop Tween" -- Set button text
 button.Parent = screenGui
 
 local function onClick()
@@ -32,7 +31,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
-    Theme = "Red",
+    Theme = "red",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
@@ -2536,7 +2535,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ImageButton.Size = UDim2.new(0, 50, 0, 50)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=17152980037"
+ImageButton.Image = "http://www.roblox.com/asset/?id=73010676624234"
 ImageButton.MouseButton1Down:connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
 end)
