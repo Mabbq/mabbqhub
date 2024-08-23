@@ -27,7 +27,7 @@ local Tabs = {
     Status = Window:AddTab({ Title = "Server Stats", Icon = "activity" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
     Player = Window:AddTab({ Title = "Player pvp", Icon = "baby" }),
-    Teleportt = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
+    Teleportt = Window:AddTab({ Title = "Teleportrrt", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Fruit Blox ESP", Icon = "apple" }),
     Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race Trial V4", Icon = "chevrons-right" }),
@@ -5850,7 +5850,7 @@ end)
 ]]
 -----------------------------------------------------------------------------------------------------------------------------------------------
 --Teleport
-local Teleportt = Tabs.Teleport:AddSection("Teleport World")
+local Teleportt = Tabs.Teleport:AddSection("Teleportt World")
 
 Tabs.Teleportt:AddButton({
     Title = "First Sea 1",
@@ -5959,8 +5959,8 @@ DropdownIsland:OnChanged(function(Value)
 end)
 
 Tabs.Teleportt:AddButton({
-    Title = "Tween island",
-    Description = "",
+    Title = "Tween issland",
+    Description = "asd",
     Callback = function()
             if _G.SelectIsland == "WindMill" then
                 toTarget(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
@@ -6066,7 +6066,7 @@ Tabs.Teleportt:AddButton({
 
     Tabs.Teleportt:AddButton({
         Title = "Stop Tween island",
-        Description = "",
+        Description = "sdfs",
         Callback = function()
           CancelTween()
         end
