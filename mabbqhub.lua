@@ -1,10 +1,6 @@
 local player = game.Players.LocalPlayer
 local gui = player:WaitForChild("PlayerGui") -- Get the player's PlayerGui
 
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "MyButtonGui"
-screenGui.Parent = gui
-
 local function onClick()
     toTarget(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
 end
