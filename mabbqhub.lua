@@ -12,6 +12,8 @@ button.Size = UDim2.new(0, 100, 0, 50) -- Set size
 button.Position = UDim2.new(0, 10, 0.5, -25) -- Set position to the left with an X offset of 10 pixel
 button.BackgroundColor3 = Color3.fromRGB(255,255,255) -- Set button background color to red
 
+button.Text = "Stop Tween" -- Set button text
+button.Parent = screenGui
 
 local function onClick()
     toTarget(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
@@ -30,7 +32,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
-    Theme = "Red",
+    Theme = "Blue",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
@@ -7873,7 +7875,7 @@ Tabs.profile:AddParagraph({
 --Hop
 
 if First_Sea or Second_Sea then
-    local Mastery = Tabs.Hop:AddSection("Third sea please!")
+    local Mastery = Tabs.Hop:AddSection("Third sea")
 end
 
 if Third_Sea then
