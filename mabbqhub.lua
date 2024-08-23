@@ -27,7 +27,7 @@ local Tabs = {
     Status = Window:AddTab({ Title = "Server Stats", Icon = "activity" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
     Player = Window:AddTab({ Title = "Player pvp", Icon = "baby" }),
-    Teleportt = Window:AddTab({ Title = "Teleportrrt", Icon = "palmtree" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
     Fruit = Window:AddTab({ Title = "Fruit Blox ESP", Icon = "apple" }),
     Raid = Window:AddTab({ Title = "Dungeon", Icon = "swords" }),
     Race = Window:AddTab({ Title = "Race Trial V4", Icon = "chevrons-right" }),
@@ -5850,9 +5850,9 @@ end)
 ]]
 -----------------------------------------------------------------------------------------------------------------------------------------------
 --Teleport
-local Teleportt = Tabs.Teleport:AddSection("Teleportt World")
+local Teleport = Tabs.Teleport:AddSection("Teleport World")
 
-Tabs.Teleportt:AddButton({
+Tabs.Teleport:AddButton({
     Title = "First Sea 1",
     Description = "",
     Callback = function()
@@ -5862,7 +5862,7 @@ Tabs.Teleportt:AddButton({
 
 
 
-Tabs.Teleportt:AddButton({
+Tabs.Teleport:AddButton({
     Title = "Second Sea 2",
     Description = "",
     Callback = function()
@@ -5872,7 +5872,7 @@ Tabs.Teleportt:AddButton({
 
 
 
-Tabs.Teleportt:AddButton({
+Tabs.Teleport:AddButton({
     Title = "Third Sea 3",
     Description = "",
     Callback = function()
@@ -5882,7 +5882,7 @@ Tabs.Teleportt:AddButton({
 
 
 
-local Mastery = Tabs.Teleportt:AddSection("Teleport Island")
+local Mastery = Tabs.Teleport:AddSection("Teleport Island")
 
 if First_Sea then
  IslandList = {
@@ -5945,7 +5945,7 @@ elseif Third_Sea then
        }
     end
 
-local DropdownIsland = Tabs.Teleportt:AddDropdown("DropdownIsland",{
+local DropdownIsland = Tabs.Teleport:AddDropdown("DropdownIsland",{
     Title = "choose island",
     Description = "",
     Values = IslandList,
@@ -5958,9 +5958,9 @@ DropdownIsland:OnChanged(function(Value)
     _G.SelectIsland = Value
 end)
 
-Tabs.Teleportt:AddButton({
-    Title = "Tween issland",
-    Description = "asd",
+Tabs.Teleport:AddButton({
+    Title = "Tween island",
+    Description = "",
     Callback = function()
             if _G.SelectIsland == "WindMill" then
                 toTarget(CFrame.new(979.79895019531, 16.516613006592, 1429.0466308594))
@@ -6064,9 +6064,9 @@ Tabs.Teleportt:AddButton({
         end
     })
 
-    Tabs.Teleportt:AddButton({
+    Tabs.Teleport:AddButton({
         Title = "Stop Tween island",
-        Description = "sdfs",
+        Description = "",
         Callback = function()
           CancelTween()
         end
