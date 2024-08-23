@@ -9,7 +9,7 @@ local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
 }) --This Will Load The Script Hub
 
 function MakeScriptHub()
-         loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/Mabbq/mabbqhub/main/mabbqhub.lua"))()'))() --Put The Script That Will Load If The Key Is Correct Here
+         loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/Mabbq/mabbqhub/main/mabbqhub.lua'))() 
 end
 
 OrionLib:MakeNotification({
