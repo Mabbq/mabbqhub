@@ -12,8 +12,6 @@ button.Size = UDim2.new(0, 100, 0, 50) -- Set size
 button.Position = UDim2.new(0, 10, 0.5, -25) -- Set position to the left with an X offset of 10 pixel
 button.BackgroundColor3 = Color3.fromRGB(255,255,255) -- Set button background color to red
 
-button.Text = "Stop Tween" -- Set button text
-button.Parent = screenGui
 
 local function onClick()
     toTarget(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
@@ -22,9 +20,7 @@ end
 button.MouseButton1Click:Connect(onClick)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZINERHUB_Ui.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZierhubManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tienvn123tkvn/Test/main/ZierhubfaceManager.lua"))()
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Mabbq Hub",
@@ -32,7 +28,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(500, 320),
     Acrylic = true,
-    Theme = "Blue",
+    Theme = "Red",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
@@ -2801,7 +2797,6 @@ end
 
 local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {
     Title = "Auto Chest Tween",
-    Description = "farm chest dạng bay", 
     Default = false })
 ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
@@ -4766,7 +4761,7 @@ if Second_Sea then
         end)
     end
 
-local Items = Tabs.Main:AddSection("Auto item nv & Race v2")
+local Items = Tabs.Main:AddSection("Auto item")
 
 if Second_Sea then
     local ToggleEvoRace = Tabs.Main:AddToggle("ToggleEvoRace", {Title = "Auto Quest Flower",Description = "",Default = false })
@@ -4848,7 +4843,7 @@ spawn(function()
     end)
 end) 
  
-    local ToggleBringMob = Tabs.Setting:AddToggle("ToggleBringMob", {Title = "Enabled Bring Mob",Description = "fix gom quái", Default = true })
+    local ToggleBringMob = Tabs.Setting:AddToggle("ToggleBringMob", {Title = "Enabled Bring Mob", Default = true })
    ToggleBringMob:OnChanged(function(Value)
         _G.BringMob = Value
     end)
@@ -6284,7 +6279,7 @@ spawn(function()
     end)
 end)
 
-local ToggleCollectTP = Tabs.Fruit:AddToggle("ToggleCollectTP", {Title = "TP Collect Devil Fruit Spam",Description = "dịch chuyển tức thời đến fruit spam", Default = false })
+local ToggleCollectTP = Tabs.Fruit:AddToggle("ToggleCollectTP", {Title = "TP Collect Devil Fruit Spam", Default = false })
 ToggleCollectTP:OnChanged(function(Value)
     _G.CollectFruitTP = Value
 end)
@@ -6301,7 +6296,7 @@ spawn(function()
             end
        end)
 
-local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Move Collect Devil Fruit Spam",Description = "bay đến fruit spam", Default = false })
+local ToggleCollect = Tabs.Fruit:AddToggle("ToggleCollect", {Title = "Move Collect Devil Fruit Spam", Default = false })
 ToggleCollect:OnChanged(function(Value)
     _G.Tweenfruit = Value
 end)
@@ -6525,7 +6520,7 @@ spawn(function()
 end)
 
 
-local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Get Fruit Low Bely",Description = "", Default = false })
+local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Get Fruit",Description = "", Default = false })
 ToggleGetFruit:OnChanged(function(Value)
     _G.Autofruit = Value
 end)
@@ -7031,12 +7026,12 @@ end)
 
 Tabs.Race:AddParagraph({
     Title = "Misc Race",
-    Content = "Auto Farm Acient Quest"
+    Content = "Auto Farm Ancient Quest"
 })
 
 
 
-local ToggleAutoAcientQuest = Tabs.Race:AddToggle("ToggleAutoAcientQuest", {Title = "Auto Acient Quest", Default = false })
+local ToggleAutoAcientQuest = Tabs.Race:AddToggle("ToggleAutoAcientQuest", {Title = "Auto Ancient Quest", Default = false })
 ToggleAutoAcientQuest:OnChanged(function(Value)
     AutoFarmAcient = Value
 end)
@@ -7118,7 +7113,7 @@ end)
 
 
 
-local ToggleAutoSoulGuitar = Tabs.Main:AddToggle("ToggleAutoSoulGuitar", {Title = "Auto get Soulguitar",Description = "tôi không biết nó hoạt động không nữa", Default = false })
+local ToggleAutoSoulGuitar = Tabs.Main:AddToggle("ToggleAutoSoulGuitar", {Title = "Auto get Soulguitar", Default = false })
 ToggleAutoSoulGuitar:OnChanged(function(Value)
     _G.AutoSoulGuitar = value
 end)
@@ -7876,7 +7871,7 @@ Tabs.profile:AddParagraph({
 --Hop
 
 if First_Sea or Second_Sea then
-    local Mastery = Tabs.Hop:AddSection("third sea pls !!!!")
+    local Mastery = Tabs.Hop:AddSection("Third sea please!")
 end
 
 if Third_Sea then
